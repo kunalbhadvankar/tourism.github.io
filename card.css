@@ -1,0 +1,14 @@
+.card:hover{
+    transform: translateY(-10px) scale(1.2);
+    box-shadow: 5px 5px 5px rgba(0, 0,0, 0.8);
+}
+
+.content{
+    display: none;
+}
+.card:hover .content{
+    display: block;
+    height: 30px;
+    background-color: pink;
+    opacity: 40%;
+}
