@@ -9,17 +9,41 @@
 .tabs ul{
     list-style:none;
     display: inline-flex;
+    margin: 50px;
 
 }
 .tabs ul li{
-    width: 220px;
+    list-style:none;
+    width: 150px;
     margin: 15px;
     padding: 25px;
     text-align: center;
+    display: inline-block;
 }
-.active, .menu ul li:hover{
-    background: rgb(252, 248, 4);
-    border-radius: 3px;
+.tabs ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+.active, .menu ul li::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.active, .menu ul li:hover::after{
+    width: 100%;
+
+
+}
+.btn{
+    padding: 10px;
+    border: 0px;
+    background:yellow;
+    font-weight: bold;
 }
 .box{
     margin-left: 450px;
@@ -55,10 +79,8 @@
 .h3{
     
 }
-.card:hover{
-    transform: translateY(-10px) scale(1.2);
-    box-shadow: 5px 5px 5px rgba(0, 0,0, 0.8);
-}
+
+
 
 .content{
     display: none;
@@ -70,5 +92,7 @@
     opacity: 40%;
 }
 
+.tabs{
 
+}
    
